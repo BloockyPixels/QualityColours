@@ -67,7 +67,7 @@ public class QualityColorsMod : Mod
 		}
 		foreach (QualityCategory cat in QualityUtility.AllQualityCategories)
 		{
-			if (Widgets.ButtonText(listing_Standard.GetRect(30f), "QualityColors.Change".Translate(cat.GetLabel()), drawBackground: false, doMouseoverSound: true, Settings.Colors[cat]))
+			if (Widgets.ButtonText(listing_Standard.GetRect(40f), "QualityColors.Change".Translate(cat.GetLabel()), drawBackground: false, doMouseoverSound: true, Settings.Colors[cat]))
 			{
 				FakeGlower glower = new FakeGlower(ColorInt.FromHdrColor(Settings.Colors[cat]), delegate(ColorInt color)
 				{
