@@ -73,10 +73,7 @@ public class QualityColorsMod : Mod
 				{
 					Settings.Colors[cat] = color.ToColor;
 				});
-				Dialog_GlowerColorPicker window = new Dialog_GlowerColorPicker(glower, new List<CompGlower>(), Widgets.ColorComponents.All, Widgets.ColorComponents.All)
-				{
-					ShowDarklight = false
-				};
+				CustomDialog_GlowerPicker window = new CustomDialog_GlowerPicker(glower, new List<CompGlower>(), Widgets.ColorComponents.All, Widgets.ColorComponents.All);
 				Find.WindowStack.Add(window);
 			}
 		}
